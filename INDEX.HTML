@@ -1,8 +1,122 @@
-<hmtl>
+<!DOCTYPE html>
+<html>
     <head>
-     <title>  Continental Hotel Reservation Form </title>
-    </head>
-    <body>
+        <title>Hotel Reservation</title>
 
+        <style>
+
+            input[type="text"], input[type="email"]{
+                margin: 3px;
+            }
+        
+            h1{
+                color: red;
+                text-align: center;
+                font-size: 135%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            table{
+                background-color: #cce5ff;
+                margin: auto;
+                width: fit-content;
+                box-shadow: 1.5px 1.5px 0px black;
+            }
+
+            th{
+                text-align: right;
+            }
+
+            th,td{
+                border-style:ridge;
+            }
+
+            .form{
+                margin:0 auto;
+                background-color: #f0f0f0;
+                width: max-content;
+                padding: 15px;
+            }
+
+            tr:last-child td{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="form">
+        <h1>Continental Hotel Reservation Form </h1>
+        <form>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" placeholder="Enter your name"></td>
+                </tr>
+
+                <tr>
+                <th>eMail</th>
+                <td><input type="email" value="info@continental.pk"></td>
+                </tr>
+
+                <tr>
+                    <th>Mobile No</th>
+                    <td><input type="text" placeholder="Enter your cell number"></td>
+                </tr>
+
+                <tr>
+                    <th>Arrival Time</th>
+                    <td><input type="text" placeholder="Enter your arrival time" ></td>
+                </tr>
+
+                <tr>
+                    <th>Departure</th>
+                    <td><input type="text"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <th>Room Type</th>
+                    <td>
+                        <input type="radio" name="room">Single
+                        <input type="radio" name="room">Double </br>
+                        <input type="radio" name="room">Presidential Suite
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Preferences</th>
+                    <td>
+                        <input type="checkbox" name="Preferences">Non-Smoking</br>
+                        <input type="checkbox" name="Preferences">Internet </br>
+                        <input type="checkbox" name="Preferences">Firm Mattress </br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Mode of Payment</th>
+                    <td>
+                        <input type="checkbox" name="mode">Cash 
+                        <input type="checkbox" name="mode">Check </br>
+                        <input type="checkbox" name="mode">Credit Card 
+                        <select>
+                            <option>Select Card</option>
+                            <option>Master Card</option>
+                            <option>Amex</option>
+                            <option>Visa</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <div class="button">
+                    <td colspan="2">
+                        <input type="submit" value="Send Data">
+                    </td>
+                    </div>
+                </tr>
+            </table>
+        </form>
+        </div>
     </body>
-</hmtl>
+</html>
